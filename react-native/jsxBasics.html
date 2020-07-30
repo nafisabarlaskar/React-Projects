@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.6.2/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0-alpha1/JSXTransformer.js"></script>
+</head>
+
+<body>
+    <div id="content"></div>
+    <script type="text/jsx">
+        //var h1Element = <h1>Hello React!!</h1>;
+        //ReactDOM.render(h1Element, document.getElementById('content'));
+        
+        //var sectionElement = <section><h1> Hello JSX </h1> <p> Learning React with JSX </p></section>
+        //ReactDOM.render(sectionElement, document.getElementById('content')); -->
+
+        class HelloComponent extends React.Component{
+            render(){
+                return (<div> 
+                    {/* <h1> Hello Component </h1> */} 
+                    <h1> {this.props.message} </h1>
+                    <p> Am a paragraph </p>
+                    {/* commenting code <p> paragraph </p> */}
+                </div>);
+            }
+        }
+        //var listOfComponents = <div> 
+          //  <HelloComponent message="Hello!"/>
+            //<HelloComponent message="Are you!"/>
+            //<HelloComponent message="there!"/>
+        //</div>
+        //ReactDOM.render(listOfComponents, document.getElementById('content'));
+        //var listOfComponents1 = <div><HelloComponent/><HelloComponent/><HelloComponent/></div>;
+        //ReactDOM.render(listOfComponents1, document.getElementById('content'));
+        //var helloComponent = <HelloComponent/>; //React.createElement(HelloComponent);
+        //ReactDOM.render(helloComponent, document.getElementById('content'));
+        //ReactDOM.render(<HelloComponent/>, document.getElementById('content'));
+    </script>
+</body>
+
+</html>
